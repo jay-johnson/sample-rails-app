@@ -21,3 +21,7 @@ rails server
 Open a browser for:
 
 http://localhost:3000/welcome/index
+
+# Running the Hello World Rake Test:
+bundle exec rake test TEST=test/controllers/hello_world_test.rb
+
