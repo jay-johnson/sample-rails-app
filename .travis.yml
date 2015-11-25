@@ -1,7 +1,20 @@
 language: ruby
+
 rvm:
   - 2.2.3
+
 gemfile: Gemfile
+
 after_install: gem list
+
 script: bundle exec rake test
+
 sudo: false
+
+deploy:
+  after_success:
+    if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+      echo "Tests Passed - Ready for Dockerizing"
+    else
+      echo "Not Dockerizing on Branch($TRAVIS_BRANCH) Pull Request($TRAVIS_PULL_REQUEST) Tag($TRAVIS_TAG)"
+    fi
