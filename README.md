@@ -1,4 +1,4 @@
-## Sample Vanilla Rails Application
+## Sample Vanilla Rails Application with Travis CI
 
 [![Travis](https://travis-ci.org/jay-johnson/sample-rails-app.svg)](https://travis-ci.org/jay-johnson/sample-rails-app.svg)
 

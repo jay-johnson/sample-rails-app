@@ -3,5 +3,5 @@ rvm:
   - 2.2.3
 gemfile: Gemfile
 after_install: gem list
-script: bundle exec rake spec
+script: bundle exec rake test
 sudo: false
