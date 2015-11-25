@@ -1,5 +1,7 @@
 ## Sample Vanilla Rails Application
 
+[![Travis](https://travis-ci.org/jay-johnson/sample-rails-app.svg)](https://travis-ci.org/jay-johnson/sample-rails-app.svg)
+
 ### Install
 
 Make sure your environment has these components:
